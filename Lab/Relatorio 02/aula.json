@@ -1,0 +1,35 @@
+[
+    {
+        "professor": "Chris",
+        "assunto": "POO",
+        "listaDeAlunos": [
+            "Ana",
+            "Beto",
+            "João",
+            "Marcos"
+        ]
+    },
+
+    {
+        "professor": "Renzo",
+        "assunto": "BD1",
+        "listaDeAlunos": [
+            "Ana",
+            "Beto",
+            "João",
+            "Marcos"
+        ]
+    },
+
+    {
+        "professor": "Jonas",
+        "assunto": "BD2",
+        "listaDeAlunos": [
+            "Ana",
+            "Beto",
+            "João",
+            "Marcos"
+        ]
+    }
+
+]
