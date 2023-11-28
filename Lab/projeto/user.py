@@ -59,9 +59,8 @@ class User:
 
     def delete(self, id):
         query = """
-        MATCH (u:User)
-        WHERE u.id = $id
-        DELETE u
+        MATCH (u:User {id: $id})-[r:OWNS]-(p:Pokemon)
+        DETACH DELETE u, r, p
         """
         parameters = {
             'id': id

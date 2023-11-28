@@ -44,14 +44,15 @@ class Pokemon:
 
     def delete(self, pokedexid):
         query = """
-        MATCH (d:Pokemon)
+        MATCH (d:Pokemon)-[r]-()
         WHERE d.pokedexid = $pokedexid
-        DELETE d
+        DELETE r, d
         """
         parameters = {
             'pokedexid': pokedexid
         }
         return self.db.execute_query(query, parameters)
+
     
     def get_pokemons_from_user(self, id):
         query = """

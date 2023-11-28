@@ -12,7 +12,7 @@ def CLI():
         print("1. Criar Cadastro de Treinador Pokemon")
         print("2. Procurar Treinador")
         print("3. Atualizar dados de treinador")
-        print("4. Remover dados de treinador")
+        print("4. Remover dados de treinador e todos seus Pokemons")
         print("5. Entrar como Treinador")
         print("6. Sair")
 
